@@ -11,8 +11,10 @@ public class Filmes extends Midia {
 	
 	@Override
 	public void imprime() {
-		System.out.println("\tInformações");
-		System.out.println("título: "+getTitulo()+"\nSinopse: "+getSinopse());
+		System.out.println("\tInformaÃ§Ãµes do filme escolhido");
+		System.out.println("-----------------------------------------------");
+		System.out.println("\nTÃ­tulo: "+getTitulo()+"\nGenero: "+getGenero());
+		System.out.println("Diretor: "+getAutor()+"\nAno: "+getAno()+"\nDuraÃ§Ã£o: "+getDuracao()+"\nSinopse: "+getSinopse()+"\n"+"\nNota dos usuarios: "+getNota());
 	}
 
 	public String getDuracao() {
