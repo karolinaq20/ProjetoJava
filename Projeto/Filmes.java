@@ -9,6 +9,20 @@ public class Filmes extends Midia {
 		this.duracao = duracao;
 	}
 	
+	@Override
+	public void imprime() {
+		System.out.println("\tInformações");
+		System.out.println("título: "+getTitulo()+"\nSinopse: "+getSinopse());
+	}
 
+	public String getDuracao() {
+		return duracao;
+	}
+
+	public void setDuracao(String duracao) {
+		this.duracao = duracao;
+	}
+	
+	
 	
 }

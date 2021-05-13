@@ -33,15 +33,15 @@ public class Usuario implements Menus{
 		System.out.println("\nTela Inicial");
 		
 		do {
-		System.out.println("\nDigite o nï¿½mero de acordo com o que vocï¿½ deseja fazer"
-				+ ":\n1-Ver perfil\n2-Ver filmes\n3-Ver sï¿½ries\n4-Deslogar");
+		System.out.println("\nDigite o número de acordo com o que você deseja fazer"
+				+ ":\n1-Ver perfil\n2-Ver filmes\n3-Ver séries\n4-Deslogar");
 		decisao = ler.nextInt();
 		
 		if(decisao == 4) {
 			return 0;
 		}
 		else if(decisao != 1 && decisao !=2 && decisao != 3) {
-			System.out.println("Nï¿½mero digitado incorreto!");
+			System.out.println("Número digitado incorreto!");
 		}
 		
 		} while(decisao != 1 && decisao != 2 && decisao != 3);
@@ -68,11 +68,11 @@ public class Usuario implements Menus{
 	
 	public int validaLogin(String email, String senha) {
 		while(!email.equals(getEmail()) || !senha.equals(getSenha())) {
-			System.out.println("\nEmail e/ou senha incorretos!\nQuer continuar tentando logar? Digite:\n1- Sim\n2- Nï¿½o\n");
+			System.out.println("\nEmail e/ou senha incorretos!\nQuer continuar tentando logar? Digite:\n1- Sim\n2- Não\n");
 			int retorno = ler.nextInt();
 			
 			while(retorno != 1 && retorno != 2) {
-				System.out.println("\nNï¿½mero digitado invï¿½lido!\nDigite: \n1- Sim\n2- Nï¿½o\n");
+				System.out.println("\nNúmero digitado inválido!\nDigite: \n1- Sim\n2- Não\n");
 				retorno = ler.nextInt();
 			}
 			
@@ -92,15 +92,15 @@ public class Usuario implements Menus{
 	}
 	
 	public void cadastrarUsuario() {
-		System.out.println("\n\n\tCadastro de usuï¿½rio");
+		System.out.println("\n\n\tCadastro de usuário");
 		
 		System.out.println("\nDigite o seu nome: ");
 		setNome(ler.nextLine());
 		
-		System.out.println("\nDigite o nome do seu paï¿½s de origem: ");
+		System.out.println("\nDigite o nome do seu país de origem: ");
 		setPais(ler.nextLine());
 		
-		System.out.println("\nDigite o nï¿½mero do seu CPF: ");
+		System.out.println("\nDigite o número do seu CPF: ");
 		setCpf(validaCpf(ler.next()));
 		
 		System.out.println("\nDigite o seu email: ");
@@ -116,7 +116,7 @@ public class Usuario implements Menus{
 	
 	public String validaCpf(String cpf) {
 		while(cpf.length() != 11) {
-			System.out.println("\nCpf digitado incorreto, digite um cpf com 11 nï¿½meros: ");
+			System.out.println("\nCpf digitado incorreto, digite um cpf com 11 números: ");
 			cpf = ler.next();
 		}
 		return cpf;
