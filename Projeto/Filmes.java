@@ -14,7 +14,7 @@ public class Filmes extends Midia {
 		System.out.println("\tInformações do filme escolhido");
 		System.out.println("-----------------------------------------------");
 		System.out.println("\nTítulo: "+getTitulo()+"\nGenero: "+getGenero());
-		System.out.println("Diretor: "+getAutor()+"\nAno: "+getAno()+"\nDuração: "+getDuracao()+"\nSinopse: "+getSinopse()+"\n"+"\nNota dos usuarios: "+getNota());
+		System.out.println("Diretor: "+getAutor()+"\nAno: "+getAno()+"\nDuração: "+getDuracao()+"\nSinopse: "+getSinopse());
 	}
 
 	public String getDuracao() {
