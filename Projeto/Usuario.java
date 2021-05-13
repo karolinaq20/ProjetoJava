@@ -1,6 +1,6 @@
 package Projeto;
 import java.util.Scanner;
-public class Usuario {
+public class Usuario implements Menus{
 	Scanner ler = new Scanner(System.in);
 	
 	private String nome ;
@@ -25,6 +25,31 @@ public class Usuario {
 		this.email = email;
 		this.idade = idade;
 	}
+	
+	
+	@Override
+	public int menuIni() {
+		int decisao;
+		System.out.println("\nTela Inicial");
+		
+		do {
+		System.out.println("\nDigite o número de acordo com o que você deseja fazer"
+				+ ":\n1-Ver perfil\n2-Ver filmes\n3-Ver séries\n4-Deslogar");
+		decisao = ler.nextInt();
+		
+		if(decisao == 4) {
+			return 0;
+		}
+		else if(decisao != 1 && decisao !=2 && decisao != 3) {
+			System.out.println("Número digitado incorreto!");
+		}
+		
+		} while(decisao != 1 && decisao != 2 && decisao != 3);
+		return decisao;
+		
+	}
+	
+	
 	
 	public int logarUsuario() {
 		System.out.println("\n\tLogin\n");
@@ -85,7 +110,6 @@ public class Usuario {
 		
 		System.out.println("\nDigite a sua senha: ");
 		setSenha(validaSenha(ler.next()));
-		
 		
 	}
 	
