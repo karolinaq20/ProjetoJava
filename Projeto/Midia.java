@@ -9,7 +9,6 @@ public abstract class Midia implements Menus{
 	private String sinopse;
 	private float nota;
 	private int ano;
-
 	
 	public Midia(String titulo, String genero, String autor, String sinopse, float nota, int ano) {
 		super();
@@ -26,13 +25,13 @@ public abstract class Midia implements Menus{
 	@Override
 	public int menuIni() {
 		int decisao;
-		System.out.println("\n\tEscolha o gÃªnero");
+		System.out.println("\n\tEscolha o gênero");
 		
 		do {
-		System.out.println("\nDigite o nÃºmero de acordo com o gÃªnero desejado: "
+		System.out.println("\nDigite o número de acordo com o gênero desejado: "
 				+ "\n1- Terror"
 				+ "\n2- Romance "
-				+ "\n3- ComÃ©dia"
+				+ "\n3- Comédia"
 				+ "\n4- Drama"
 				+ "\n5- Voltar"
 				);
@@ -42,12 +41,14 @@ public abstract class Midia implements Menus{
 			return 5;
 		}
 		else if(decisao<1 || decisao>5) {
-			System.out.println("NÃºmero digitado incorreto!");
+			System.out.println("Número digitado incorreto!");
 		}
 		
 		} while(decisao<1 || decisao>5);
 		return decisao;
 	}
+	
+	public abstract void imprime();
 
 	public String getTitulo() {
 		return titulo;
