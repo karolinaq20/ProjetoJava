@@ -7,16 +7,14 @@ public abstract class Midia implements Menus{
 	private String genero;
 	private String autor;
 	private String sinopse;
-	private float nota;
 	private int ano;
 	
-	public Midia(String titulo, String genero, String autor, String sinopse, float nota, int ano) {
+	public Midia(String titulo, String genero, String autor, String sinopse, int ano) {
 		super();
 		this.titulo = titulo;
 		this.genero = genero;
 		this.autor = autor;
 		this.sinopse = sinopse;
-		this.nota = nota;
 		this.ano = ano;
 	}
 	
@@ -48,7 +46,7 @@ public abstract class Midia implements Menus{
 		return decisao;
 	}
 	
-	public abstract void imprime();
+	public abstract int imprime();
 
 	public String getTitulo() {
 		return titulo;
@@ -90,14 +88,5 @@ public abstract class Midia implements Menus{
 		this.sinopse = sinopse;
 	}
 
-	public float getNota() {
-		return nota;
-	}
-
-	public void setNota(float nota) {
-		this.nota = nota;
-	}
-	
-	
 	
 }
