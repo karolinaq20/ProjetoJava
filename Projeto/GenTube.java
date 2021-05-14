@@ -6,12 +6,6 @@ public class GenTube {
 		Scanner ler = new Scanner(System.in);
 		int decisao, retorno = 0, voltar = 1, num, escolha;
 		
-		ArrayList <String> filmesFav = new ArrayList();
-		ArrayList <String> filmesConc = new ArrayList();
-		
-		ArrayList <String> seriesFav = new ArrayList();
-		ArrayList <String> seriesConc = new ArrayList();
-		
 		Filmes[][] catalogoFilme = new Filmes [4][2];
 		Serie[][] catalogoSerie = new Serie [4][2];
 		
@@ -19,16 +13,16 @@ public class GenTube {
 		Usuario usuario1 = new Usuario("Antonio", "Brasil", "11111111111", "antonio@teste.com",19,"senhateste");
 		Usuario usuario2 = new Usuario(null, null, null, 0);
 		
-		//TESTE
-		Perfil perfil1 = new Perfil(null, null, null, 0, 0, 0, null, null);
+		
+		Perfil perfil1 = new Perfil("Antonio", "Brasil", "antonio@teste.com", 19, 0, 0);
 		Serie series1= new Serie ("The Walking Dead 2010", "Terror","Frank Darabo", "Serie  de terror tenebrosa", 2010,11,16,44);//terror
-        Serie series2= new Serie("A Maldição da Residência Hill 2018","Terror"," Mike Flanagan"," Filme de terror muito bom inspirado no livro do mesmo nome",2018,1,10,60);//terror
-        Serie series3= new Serie("Dash & Lily","Romance","Karl Frankenfield","Aquela série para maratonar no final de semana.",2020,1, 8, 27);//romance
-        Serie series4= new Serie("Anne with an E","Romance","Criador(es): Moira Walley-Beckett","Essa série é simplesmente maravilhosa,te prende do inicio ao fim.", 2020, 3, 27, 45);//romance
-        Serie series5= new Serie("The Office 2005","comedia","Greg Daniels."," Melhor série de comédia dos últimos tempos.", 2019, 9, 191, 44);//comedia
-        Serie series6= new Serie("Modern Family 2009","comedia"," Christopher Loyd.","Série de comédia bem legal.", 2016, 4, 44, 42);//comedia
-        Serie series7= new Serie("The Crown"," Drama","Peter Morgan","Série que mostra a vida da família real,muito boa", 2018, 4, 40, 61);//drama
-        Serie series8= new Serie("This is Us (2016)","Drama","Criador(es): Peter Morgan","Série que faz você chorar muito.",2020, 5, 70,69);//drama
+        Serie series2= new Serie("A Maldiï¿½ï¿½o da Residï¿½ncia Hill 2018","Terror"," Mike Flanagan"," Filme de terror muito bom inspirado no livro do mesmo nome",2018,1,10,60);//terror
+        Serie series3= new Serie("Dash & Lily","Romance","Karl Frankenfield","Aquela sï¿½rie para maratonar no final de semana.",2020,1, 8, 27);//romance
+        Serie series4= new Serie("Anne with an E","Romance","Criador(es): Moira Walley-Beckett","Essa sï¿½rie ï¿½ simplesmente maravilhosa,te prende do inicio ao fim.", 2020, 3, 27, 45);//romance
+        Serie series5= new Serie("The Office 2005","comedia","Greg Daniels."," Melhor sï¿½rie de comï¿½dia dos ï¿½ltimos tempos.", 2019, 9, 191, 44);//comedia
+        Serie series6= new Serie("Modern Family 2009","comedia"," Christopher Loyd.","Sï¿½rie de comï¿½dia bem legal.", 2016, 4, 44, 42);//comedia
+        Serie series7= new Serie("The Crown"," Drama","Peter Morgan","Sï¿½rie que mostra a vida da famï¿½lia real,muito boa", 2018, 4, 40, 61);//drama
+        Serie series8= new Serie("This is Us (2016)","Drama","Criador(es): Peter Morgan","Sï¿½rie que faz vocï¿½ chorar muito.",2020, 5, 70,69);//drama
         
 
         
@@ -51,12 +45,12 @@ public class GenTube {
 		
 		Filmes filmes1= new Filmes("O Exorcismo de Emily Rose","Terror","Scott Derrickson","Filme de terror bom.", 2005,119);//terror
         Filmes filmes2= new Filmes("O Iluminado","Terror","Stanley Kubrick","Filme de terror muito bom inspirado no livro do mesmo nome.", 1980, 146);//terror
-        Filmes filmes3= new Filmes("Um Amor Para Recordar","Romance","Adam Shankman","Nunca vi, mas dizem que é bom também", 2002,101);//Romance
+        Filmes filmes3= new Filmes("Um Amor Para Recordar","Romance","Adam Shankman","Nunca vi, mas dizem que ï¿½ bom tambï¿½m", 2002,101);//Romance
         Filmes filmes4= new Filmes("Her","Romance","Spike Jonze","Filme muito bom com uma fotografia linda.", 2013,126);//Romance
-        Filmes filmes5= new Filmes("As Branquelas", "Comédia", "Keenan Ivory Wayans","Uma das melhores comédias até hoje.", 2004,109);//Comedia
-        Filmes filmes6= new Filmes("Minha Mãe é Uma Peça", "Comédia","Andre Pellenz", "Comédia nacional muito boa.", 2013,84);// Comedia
-        Filmes filmes7= new Filmes("Um Sonho Possível","Drama","John Lee Hancock","Filme muito bonito.", 2009, 129);// Drama
-        Filmes filmes8= new Filmes("O Jogo da Imitação", "Drama", "Morten Tyldum","Filme baseado em fatos reais e históricos. Conta a história de Alan Turing, um dos pais da criptografia e computação atual.", 2014, 114);// Drama
+        Filmes filmes5= new Filmes("As Branquelas", "Comï¿½dia", "Keenan Ivory Wayans","Uma das melhores comï¿½dias atï¿½ hoje.", 2004,109);//Comedia
+        Filmes filmes6= new Filmes("Minha Mï¿½e ï¿½ Uma Peï¿½a", "Comï¿½dia","Andre Pellenz", "Comï¿½dia nacional muito boa.", 2013,84);// Comedia
+        Filmes filmes7= new Filmes("Um Sonho Possï¿½vel","Drama","John Lee Hancock","Filme muito bonito.", 2009, 129);// Drama
+        Filmes filmes8= new Filmes("O Jogo da Imitaï¿½ï¿½o", "Drama", "Morten Tyldum","Filme baseado em fatos reais e histï¿½ricos. Conta a histï¿½ria de Alan Turing, um dos pais da criptografia e computaï¿½ï¿½o atual.", 2014, 114);// Drama
         
 		//Serie 1 do genero terror
 		catalogoFilme[0][0] = filmes1;
@@ -86,14 +80,16 @@ public class GenTube {
 				if(login == 1) {
 					System.out.println("\nLogou");
 					do {
-						retorno = usuario1.menuIni();
-						System.out.println(retorno);					
+						retorno = usuario1.menuIni();					
 		
 						if(retorno == 0) {
 							System.out.println("Deslogou");
+							voltar = 1;
 						}
 						else if(retorno == 1) {
-							System.out.println("Ver perfil");
+							perfil1.imprimirPerfil();
+							perfil1.imprimeArrayList();
+							voltar=0;
 						}
 						else if(retorno == 2) {
 							System.out.println("Ver filmes");
@@ -109,7 +105,7 @@ public class GenTube {
 								}
 								do {
 									System.out.println("\n\tFilmes");
-									System.out.println("Digite o número do filme que deseja vizualizar as informações: ");
+									System.out.println("Digite o nï¿½mero do filme que deseja vizualizar as informaï¿½ï¿½es: ");
 									num = ler.nextInt();
 									if(num != 1 && num !=2) {
 										System.out.println("\nValor incorreto!");
@@ -122,18 +118,20 @@ public class GenTube {
 									voltar = 0;
 								}
 								else if(escolha == 1) {
-									filmesConc.add(catalogoFilme[fil-1][num-1].getTitulo());
+									perfil1.filmesConc.add(catalogoFilme[fil-1][num-1].getTitulo());
 									perfil1.setTempoFilme(perfil1.getTempoFilme()+catalogoFilme[fil-1][num-1].getDuracao());
+									voltar = 0;
 								}
 								else if(escolha == 2) {
-									filmesFav.add(catalogoFilme[fil-1][num-1].getTitulo());
+									perfil1.filmesFav.add(catalogoFilme[fil-1][num-1].getTitulo());
+									voltar = 0;
 								}								
 								
 							}
 							
 						}
 						else {
-							System.out.println("Ver séries");
+							System.out.println("Ver sï¿½ries");
 							int ser = series3.menuIni();
 							
 							if(ser == 5) {
@@ -146,7 +144,7 @@ public class GenTube {
 								}
 								do {
 									System.out.println("\n\tFilmes");
-									System.out.println("Digite o número do filme que deseja vizualizar as informações: ");
+									System.out.println("Digite o nï¿½mero do filme que deseja vizualizar as informaï¿½ï¿½es: ");
 									num = ler.nextInt();
 									if(num != 1 && num !=2) {
 										System.out.println("\nValor incorreto!");
@@ -159,11 +157,13 @@ public class GenTube {
 									voltar = 0;
 								}
 								else if(escolha == 1) {
-									seriesConc.add(catalogoSerie[ser-1][num-1].getTitulo());
+									perfil1.seriesConc.add(catalogoSerie[ser-1][num-1].getTitulo());
 									perfil1.setTempoSerie(perfil1.getTempoSerie()+(catalogoSerie[ser-1][num-1].getEpisodio()*catalogoSerie[ser-1][num-1].getDuracaoMedia()));
+									voltar = 0;
 								}
 								else if(escolha == 2) {
-									seriesFav.add(catalogoSerie[ser-1][num-1].getTitulo());
+									perfil1.seriesFav.add(catalogoSerie[ser-1][num-1].getTitulo());
+									voltar = 0;
 								}								
 									
 							}
@@ -173,13 +173,13 @@ public class GenTube {
 						
 				}
 				else {
-					System.out.println("\nNão logou");
+					System.out.println("\nNï¿½o logou");
 				}
 			}
 			else{
 				usuario2.cadastrarUsuario();
 			
-				System.out.println("Cadastro concluído com sucesso "+usuario2.getNome());
+				System.out.println("Cadastro concluï¿½do com sucesso "+usuario2.getNome());
 				retorno = 0;
 			}
 		} while(retorno == 0);
