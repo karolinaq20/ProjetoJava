@@ -11,14 +11,16 @@ public class Filmes extends Midia {
 	
 	@Override
 	public int imprime() {
-		System.out.println("\tInformações");
-		System.out.println("título: "+getTitulo()+"\nSinopse: "+getSinopse());
+		System.out.println("\tInformaÃ§Ãµes do filme escolhido");
+		System.out.println("-----------------------------------------------");
+		System.out.println("\nTÃ­tulo: "+getTitulo()+"\nGenero: "+getGenero());
+		System.out.println("Diretor: "+getAutor()+"\nAno: "+getAno()+"\nDuraÃ§Ã£o: "+getDuracao()+"\nSinopse: "+getSinopse());
 		
-		System.out.println("\n\n\tOpções");
+		System.out.println("\n\n\tOpï¿½ï¿½es");
 		int decisao;
 		do {
-			System.out.println("\nDigite o número de acordo com o que você quer fazer: "
-					+ "\n1- Marcar como concluído"
+			System.out.println("\nDigite o nï¿½mero de acordo com o que vocï¿½ quer fazer: "
+					+ "\n1- Marcar como concluï¿½do"
 					+ "\n2- Adicionar como favorito"
 					+ "\n3- Voltar");
 			decisao = ler.nextInt();
@@ -27,7 +29,7 @@ public class Filmes extends Midia {
 				return decisao;
 			}
 			else if(decisao<1 || decisao>3) {
-				System.out.println("Número digitado incorreto!");
+				System.out.println("Nï¿½mero digitado incorreto!");
 			}
 			
 			} while(decisao<1 || decisao>3);
