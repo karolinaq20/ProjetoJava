@@ -16,8 +16,14 @@ public class Serie extends Midia {
 	
 	@Override
 	public int imprime() {
-		System.out.println("\tInformações");
-		System.out.println("título: "+getTitulo()+"\nSinopse: "+getSinopse());
+		
+		System.out.println("\tInformações do Serie escolhida");
+        System.out.println("-----------------------------------------------");
+		System.out.println("\nTítulo: "+getTitulo()+"\nGenero: "
+				+getGenero()+"\nAutor:"+getAutor()+
+				"\nTemporada: "+getTemporada()+"\nAno: "+getAno()+
+				"\nEpisodios: "+getDuracaoMedia()+"\nSinopse: "+getSinopse());
+
 		
 		
 		System.out.println("\n\n\tOpções");

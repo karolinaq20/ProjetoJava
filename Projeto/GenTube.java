@@ -21,15 +21,16 @@ public class GenTube {
 		
 		//TESTE
 		Perfil perfil1 = new Perfil(null, null, null, 0, 0, 0, null, null);
-		
-		Serie series1= new Serie ("The Walking Dead 2010", "Terror","Diretor: Frank Darabo", "Sinopse: Filme de terror", 2010,11,16,44);//terror
-        Serie series2= new Serie("A Maldição da Residência Hill 2018","Genero: Terror","Diretor: Mike Flanagan","Sinopse: Filme de terror muito bom inspirado no livro do mesmo nome",2018,1,10,60);//terror
-        Serie series3= new Serie("Dash & Lily","Genero: Romance","Autor: zeze","Sinopse: Nunca vi, mas dizem que é bom também.",2020,1, 8, 27);//romance
-        Serie series4= new Serie("Anne with an E","Genero: Romance","Criador(es): Moira Walley-Beckett","sinopse : Essa série é simplesmente maravilhosa,te prende do inicio ao fim.", 2020, 3, 27, 45);//romance
-        Serie series5= new Serie("The Office 2005","Genero: comedia","Diretor: Greg Daniels.","Sinopse: Melhor série de comédia dos últimos tempos.", 2019, 9, 191, 44);//comedia
-        Serie series6= new Serie("Modern Family 2009","Genero: comedia","Diretor: Christopher Loyd.","Sinopse: Série de comédia bem legal.", 2016, 4, 44, 42);//comedia
-        Serie series7= new Serie("The Crown","Genero: Drama","Autor: Peter Morgan","Sinopse: Série que mostra a vida da família real,muito boa",2018, 4, 40, 61);//drama
-        Serie series8= new Serie("This is Us (2016)","Genero: Drama","Criador(es): Peter Morgan","sinopse :Série que faz você chorar muito.", 2020, 5, 70,69);//drama
+		Serie series1= new Serie ("The Walking Dead 2010", "Terror","Frank Darabo", "Serie  de terror tenebrosa", 2010,11,16,44);//terror
+        Serie series2= new Serie("A Maldição da Residência Hill 2018","Terror"," Mike Flanagan"," Filme de terror muito bom inspirado no livro do mesmo nome",2018,1,10,60);//terror
+        Serie series3= new Serie("Dash & Lily","Romance","Karl Frankenfield","Aquela série para maratonar no final de semana.",2020,1, 8, 27);//romance
+        Serie series4= new Serie("Anne with an E","Romance","Criador(es): Moira Walley-Beckett","Essa série é simplesmente maravilhosa,te prende do inicio ao fim.", 2020, 3, 27, 45);//romance
+        Serie series5= new Serie("The Office 2005","comedia","Greg Daniels."," Melhor série de comédia dos últimos tempos.", 2019, 9, 191, 44);//comedia
+        Serie series6= new Serie("Modern Family 2009","comedia"," Christopher Loyd.","Série de comédia bem legal.", 2016, 4, 44, 42);//comedia
+        Serie series7= new Serie("The Crown"," Drama","Peter Morgan","Série que mostra a vida da família real,muito boa", 2018, 4, 40, 61);//drama
+        Serie series8= new Serie("This is Us (2016)","Drama","Criador(es): Peter Morgan","Série que faz você chorar muito.",2020, 5, 70,69);//drama
+        
+
         
 		//Serie 1 do genero terror
 		catalogoSerie[0][0] = series1;
