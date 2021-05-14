@@ -5,8 +5,8 @@ Desenvolvimento de um projeto para gerenciamento de Séries e filmes,cria um per
 Versão Beta.
 
 Desenvolvedores
-Antônio
-Felipe
-Gustavo
-Ismar 
-Karolina
+* Antônio
+* Felipe
+* Gustavo
+* Ismar 
+* Karolina
